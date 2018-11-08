@@ -2,7 +2,7 @@
 
 ***Description***
 
-This is a **main.go** application that prints `hello world`
+This is a **main.go** application that prints `hello`
 
 ***Requirements***
 
@@ -11,7 +11,7 @@ You can use vagrantbox local dev by installing vagrant first : [link for vagrant
 ***Related files***
 
 - Vagrantfile : a file used in order to build DEV environment
-- main.go : a GO application that prints `hello world`
+- main.go : a GO application that prints `hello`
 - /scripts/provision.sh - a script that installs "go"
 
 ***How to use the application***
