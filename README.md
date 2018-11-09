@@ -17,7 +17,7 @@ You can use vagrantbox local dev by installing vagrant first : [link for vagrant
 
 ### How to use the application
 
-## Note ## : Below steps have been applied on UbuntuOS, so in order to test how the application works, please follow :
+#### Note : Below steps have been applied on UbuntuOS, so in order to test how the application works, please follow :
 
 - Clone this repo to your local machines : `git clone git@github.com:galindonkov/hello_app_goland.git`
 - Change to the currently added directory : `cd hello_app_goland/`
