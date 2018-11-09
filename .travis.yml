@@ -1,5 +1,15 @@
 language: generic
 dist: xenial
 sudo: required
+before_script:
+- go build main.go
 script:
 - bash test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: PeGH6ILRV/UYM+pX8fj5eBwjm0V39C5630MIoA92Cwnni1kKCZXS6tLeJimWeSVIJynp1HTlXajsRl4wW7ztZ/7J178iiflvd+ma/eJpqbV7pGQmkcAcO4Q4XEYMdC3LIkw4XiptnKzET5H7L8LkuRZXJDmWH8BGdK6691+E8UrekdZiPpgjfZE9JyBasLrMQ8lh2a/WESc8xzqQIPfVwnKiomT92ruxPyE16X5G57sA0tA2lX3Yat7YBRVcuQjJyiV3SG052Su+Xk6ct0fiTd9MQ0QuYe/Ldozq1b0yVTW9J9POvutVHJl4qmwpCy9palWX51eDhqckaHPKWU5pSZErZeW8nIAeBYiZe2h5lh5wLSyCKDunrGtEJxAAsZfsCiSkaTidSVgZt9ADVK/6fAJCDIkSKadCChuthqkSD0VetbFvKSW03sCCGab14NAQaKlA8+uCLVMbv155s0v6R3Hsp26EbiqYJkG+e2Khvh591URW9wYIojN5EzB576Us/uKbrEvc8U6ld/qBsVEh4jsb0JVZ3aooqZngE4reeZ/aMXeYaBk+GonoDVdxRQhbwhARmQvlKlOoSZNsLIxJQQHHfrQW+OnNl1is8Vmy92Evp0wOypB7djmlj7Q6wjh84ciMm5zn2p+hgWmfwB3vwA0Kx48RFDbRPEDmUvT8Avg=
+  file: main
+  on:
+    repo: galindonkov/hello_app_golang
+    tags: true
