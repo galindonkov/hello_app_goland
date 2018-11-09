@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# run the app
-out=$( go run main.go)
+# run the application
+go build main.go
+out=$(./main)
 
 # test the output
 if [ ${out} == "hello" ]; then
