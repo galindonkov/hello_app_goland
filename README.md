@@ -27,3 +27,7 @@ You can use vagrantbox local dev by installing vagrant first : [link for vagrant
 - Test the application by : `go run main.go`
 - Once you finish with the test type `exit` to leave the Vagrant-built virtual machine.
 - Bear in mind that the Vm will remain running, so in case it is not needed anymore you can either shut down the running machine Vagrant is managing by `vagrant halt` or using `vagrant destroy` to stop the running machine and destroy all resources that were created during the machine creation process. 
+
+#### TO DO
+
+- Travis setup release
